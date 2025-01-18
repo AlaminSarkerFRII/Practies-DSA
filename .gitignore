@@ -2,3 +2,8 @@
 *__pycache__
 dist
 node_modules
+
+.idea
+
+
+*.idea
