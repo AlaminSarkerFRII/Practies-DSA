@@ -9,5 +9,5 @@ node_modules
 *.idea
 
 /dsa_venv/
-
-dsa_venv
+*dsa_venv
+./dsa_venv
