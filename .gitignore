@@ -2,10 +2,7 @@
 *__pycache__
 dist
 node_modules
-
 .idea
-
-
 *.idea
 
 /dsa_venv/

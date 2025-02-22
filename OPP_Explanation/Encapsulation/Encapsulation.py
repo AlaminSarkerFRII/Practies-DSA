@@ -1,33 +1,21 @@
-from django.db import models
-
-# Using Django
-
-class CommonInformation(models.Model):
-    name = models.CharField(max_length=100)
-    age = models.PositiveIntegerField(null=True, blank=True)
-    address = models.TextField(null=True, blank=True)
-
-    class Meta:
-        abstract = True
+ # Exampl eof Using Bank Account
 
 
-class StudentInfo(CommonInformation):
-    student_id = models.CharField(max_length=100, unique=True)
-    grade = models.PositiveIntegerField(null=True, blank=True)
-    student_description = models.TextField()
 
+# A Car class encapsulates the car's speed and provides methods to accelerate and brake.
+
+class Car:
     def __str__(self):
-        return self.student_id
+        self.__speed = 0 #private attribute
+
+    def accelerate(self, increment):
+        if increment > 0:
+            self.__speed += increment
 
 
-
-class TeacherInfo(CommonInformation):
-    teacher_id = models.CharField(max_length=100, unique=True)
-    subject = models.CharField(max_length=100)
-    teacher_description = models.TextField()
-
-    def __str__(self):
-        return self.teacher_id
-
-
-# Now you can create views and Return Response for showing Student and Teacher information
+    def brake(self, decrement):
+        if 0 < decrement <= self.__speed:
+            self.__speed -= decrement
+            
+    def get_speed(self):
+        return self.__speed
