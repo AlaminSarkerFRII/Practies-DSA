@@ -2,7 +2,7 @@
 that bundles data and methods into a single unit.
  It's a way to organize and protect data by hiding implementation details..****`
 
-### I Used Django for Describing Encapsulation
+### 1. I Used Django for Describing Encapsulation
 
 ```
 How Encapsulation works :
@@ -20,7 +20,13 @@ How Encapsulation works :
 3.Building Data and Method: Encapsulation groups related data and method into a single unit(class), 
     making the code more organized and easier to maintain
 
+```
+
 
 ```
+Encapsulation হল Object-Oriented Programming (OOP) এর একটি গুরুত্বপূর্ণ concept, যেখানে data (attributes) এবং methods (functions) কে একসাথে bundle করে রাখা হয় এবং direct access restrict করা হয়। Django তে encapsulation ব্যবহার করে আপনি আপনার code কে আরও secure, maintainable, এবং organized করতে পারেন।
+
+```
+
 
 
